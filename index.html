@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Video Player</title>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+
+<body>
+
+
+    <section class="video-container">
+         
+
+        <video id="videoPlayer"></video>
+        
+        <div class="first-control"> 
+            <span class="current-time">00:00</span>
+
+            <button class="play-btn">
+                <i id="volume-icon" class="fa-solid fa-play"></i>
+            </button>
+
+            <button class="pause-btn" style="display: none;">
+                <i class="fa-solid fa-pause"></i>            
+            </button>
+        </div>
+
+        <div class="second-control">
+            <input id="seekslider" type="range" min="0" max="100" value="0">
+        </div>
+        <input type="file" id="videoInput" accept="video/*" hidden>
+    <button id="select-video" type="button">Select Video</button>
+
+        <div class="third-control">
+
+            <button class="volume-btn">
+                <i class="fa-solid fa-volume-down"></i>
+            </button>
+
+            <button id="volume-silent" style="display: none;">
+                <i class="fa-solid fa-volume-xmark"></i>
+            </button>
+
+            <button class="fullscreen-btn">
+                <i class="fa-solid fa-expand"></i>
+            </button>
+
+            <button class="menu-btn">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+
+        </div>
+         
+        
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
